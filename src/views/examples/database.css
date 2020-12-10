@@ -1,0 +1,36 @@
+.add:hover{
+    transition: .2s;
+
+    transform: rotateZ(2px);
+    transform: translateX(3px);
+    transform: translateY(-1rem);
+
+    box-shadow: -1rem 0 6rem #CFD2D1 ;
+}
+
+.rules:hover{
+    transition: 2s;
+
+    z-index: auto;
+
+    box-shadow: -1rem 0 6rem #2E547C ;
+    
+    color: #041D39;
+}
+
+.rules:focus{
+    transition: 3s;
+
+    box-shadow: -2rem 0 6rem #0B335D ;
+    color: lightseagreen;
+
+    text-rendering: optimizeSpeed;
+    text-transform: lowercase;
+}
+
+.rules{
+    transition: 2s;
+
+    color: black;
+    text-align: center;
+}
