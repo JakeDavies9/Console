@@ -60,6 +60,7 @@ Please update the following components: withScriptjs(withGoogleMap(Component))
 
 in `sidebar.js`
 
+```
 GetProject = () =>{ 
 
     const db = firebase.firestore()
@@ -70,7 +71,9 @@ GetProject = () =>{
     }).catch(err => {
       console.error("Error: No default project initialized", err)
     })
-  } 
+  }
+  
+  ```
 
 this function gets the user's current web application which they tied to their account. Which we will tell you how to tie an app to their account via https://gamingservers.cloud/guides/apps/
 
@@ -79,6 +82,7 @@ this function gets the user's current web application which they tied to their a
 
 We will call the `login` method inside of `Login.js`
 
+```
  Login = () => {
     const self = this
     firebase.auth().signInWithEmailAndPassword(this.state.username, this.state.password).then(function(user){      
@@ -112,8 +116,10 @@ We will call the `login` method inside of `Login.js`
     });
   }
 
+```
 ### Google sign-in
 
+```
 Google = () =>{
     const self = this
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -141,3 +147,4 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
   // ...
 });
   }
+```
