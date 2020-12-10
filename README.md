@@ -148,3 +148,6 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
 });
   }
 ```
+
+## Database setup
+### Shows the user their current database structure
