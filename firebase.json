@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "gmad-console",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
